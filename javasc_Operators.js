@@ -60,3 +60,11 @@ console.log(7 === "7"); // to check the data type too we use '===' in javascript
 // " + " 
 // It's a string operator used to concatenate two strings.
 
+
+//Ternary Operator
+//Syntax
+// condition ? exprIfTrue : exprIfFalse
+
+let age = 20;
+let beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage); // Output: Juice
