@@ -85,5 +85,14 @@ let n2 = 145356476886978967n;
 //U cannot perform any operation between int and big without explicitly converting one fo the two data types to make them same data types.
 
 
+//################# Booleans ################
+
+// boolean data type has two values " True or false ".
+
+let bool1 = 8;
+let bool2 = 8;
+console.log(bool1 > bool2); //it will   give us false.
+
+
 
 
