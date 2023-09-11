@@ -68,5 +68,5 @@ console.log(7 === "7"); // to check the data type too we use '===' in javascript
 // condition ? exprIfTrue : exprIfFalse
 
 let year = 20;
-let beverage = (yeat >= 21) ? "Beer" : "Juice";
+let beverage = (year >= 21) ? "Beer" : "Juice";
 console.log(beverage); // Output: Juice

@@ -85,5 +85,5 @@ if(hello1){
 //  condition ? exprIfTrue : exprIfFalse
 
 let year = 20;
-let beverage = (yeat >= 21) ? "Beer" : "Juice";
+let beverage = (year >= 21) ? "Beer" : "Juice";
 console.log(beverage); // Output: Juice
