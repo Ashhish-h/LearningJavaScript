@@ -87,3 +87,41 @@ if(hello1){
 let year = 20;
 let beverage = (year >= 21) ? "Beer" : "Juice";
 console.log(beverage); // Output: Juice
+
+
+// Nested IF ELSE
+
+let winNum = 20;
+let userInput = +prompt("Guess a Number");
+if(userInput === winNum){
+    console.log("You Won");
+} else {
+    if(userInput < winNum){
+        console.log("Number is too small");
+    } else {
+        console.log("Number is too big");
+    }
+}
+
+
+
+// If - Else-If - ELSE
+//In JavaScript, the else if statement is used to introduce a new condition to test if the previous if condition is false.
+
+//You can add multiple else if condition. 
+let tempInDegree = 50;
+
+if (tempInDegree < 0){
+    console. log("extremely cold outside");
+}else if(tempInDegree < 16){
+    console. log("It is cold outside");
+}else if(tempInDegree < 25){
+    console. log("wheather is okay ");
+}else if(tempInDegree < 35){
+    console. log("lets go for swim");
+}
+else if(tempInDegree < 45) {
+    console. log("turn on AC");
+}else{
+    console. log("too hot!!");
+}
