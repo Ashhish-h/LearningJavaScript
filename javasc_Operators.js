@@ -70,3 +70,30 @@ console.log(7 === "7"); // to check the data type too we use '===' in javascript
 let year = 20;
 let beverage = (year >= 21) ? "Beer" : "Juice";
 console.log(beverage); // Output: Juice
+
+
+// Logical Operator
+// 1) Logical And Operator  (&&)
+// In this both provided conditions should be true else it will result in false
+
+let length = 12;
+let breadth = 20;
+if(length >= 12 && breadth <=20) // Both condition will be checked if any of the two is false whole condition will be false 
+{
+    console.log(length * breadth);
+} else{
+    console.log("Condition didn't match");
+}
+
+
+// Logical OR (||)
+// Any of the provided condition should be true
+
+let len = 12;
+let bre= 20;
+if(len >= 12 || bre > 20) // Both condition will be checked if any of the two is true whole condition will be true
+{
+    console.log(len * bre);
+} else{
+    console.log("Condition didn't match");
+}
