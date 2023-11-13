@@ -96,19 +96,20 @@ console.log(bool1 > bool2); //it will   give us false.
 
 // ####### Some Important Things Useful For Output Questions ###############
 
-Ques 1 --> 5 + "5"
-output -->  '55'  //Here Implicit type conversion takes palce 5 which is integer is getting converted into string.
+// Ques 1 --> 5 + "5"
+// output -->  '55'  //Here Implicit type conversion takes palce 5 which is integer is getting converted into string.
 
 // Same goes for this "5" + 5
 
 // But for '-' operator things are different 
-Ques --> 5 - "5"
-Output --> 0 // Here Implicit type conversion of string is taking place
+// Ques --> 5 - "5"
+// Output --> 0 
+// Here Implicit type conversion of string is taking place
 
-+"5" 
+// +"5" 
 // it will be converted into integer type Output ----> 5
 
--"5"  
+// -"5"  
 // 5 will be converted into integer and the result will be ----> -5
 
 
