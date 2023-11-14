@@ -58,20 +58,19 @@ console.log(modArr);
 
 // If we do like modArr[11] So since 11 index is not present in the array JavaScript will add this index and the value to that Index and the length will increase of the array to n + 1(n = 11) so length will 12
 
-//Useful Methods of Array
+// ###################################Useful Methods of Array####################################
 
-//.shift() methods
+// ###########################.shift() methods#####################
 //it is used to delete first element of the array Ex--.
 modArr.shift();
 console.log(modArr); // ["How", "Are", "You"];
 
-// .unshift()  
+// /##########################.unshift() ######################## 
 //It is used to add element in array, element will be added at the ZEROTH Index Ex-->
 modArr.unshift("Hello!");
 console.log(modArr); // ["Hello!", "How", "Are", "You"];
 
-// CONCAT 
-
+// ##############################CONCAT############################ 
 //method it is used to join two arrays
 // New array is formed this method doesn't make any changes to original array
 let arr1 = ["hello", "how", "Are"];
@@ -93,7 +92,7 @@ console.log(arr3.reverse()); //['fine', 'doing', 'Am', 'I', 'Are', 'how', 'hello
 
 
 
-// SLICE METHOD
+// ######################################SLICE METHOD###############################
 
 // slice method is used to get a copy of certain parts of array like string
 // ex-->
@@ -114,7 +113,7 @@ console.log(arr3.slice(2,5));   //it will print from 2 to 4 since end is exclusi
 console.log(arr3.slice(-2)); // it will return last two elements form the array whenever - is used it will give elements from last 
 
 
-// SPLICE METHOD
+// ##########################################SPLICE METHOD############################################
 
 // its a all rounder method we perform deletion and addition and even slice functions with only using this
 // Unlike slice it modifies the original array 
@@ -153,3 +152,16 @@ console.log(arr4.splice(3, 0, 3)); // start index is 3, no of elements to be del
 // original arr  after modification
 console.log(arr4);
 // [2, 9, 7, 3, 8, 5, 4, 5, 6]
+
+
+
+
+
+
+// ########################## PUSH AND POP METHOD ##############################
+
+console.log(arr4.push(4)) // used to add values in array , at the end of the array
+//.push() method returns the value it has added to the array
+
+console.log(arr4.pop()) // used to delete last element of the array.
+//.pop method returns the deleted element 
