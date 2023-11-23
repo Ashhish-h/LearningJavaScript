@@ -93,3 +93,10 @@ console.log(s);
 let tempString = `Hello my first name is ${fName} and last is ${lName}`;
 console.log(tempString);
 
+// ############ .inlcudes() of String
+
+// The includes() method returns true if a string contains a specified string.
+
+// Otherwise it returns false.
+
+// The includes() method is case sensitive.
