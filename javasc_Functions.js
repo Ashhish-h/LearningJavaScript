@@ -138,3 +138,26 @@ let func2 = (e, f) => {
 
 //if you want to return a single value in arrow functions you don't even need to write the return keyword it will be implicitly added by the complier
 
+// ## setTimeout()
+// syntax
+// setTimeout(func, timeout);
+
+setTimeout( () => {
+    console.log("It is printed after 4s");
+}, 4000);
+
+
+// #### setInterval(func, timeout or interval)
+
+// syntax is same is setTimeout
+let id = setInterval( () =>{
+    console.log("It will be printed again and again after some interval to stop it you must use clearInterval(id)")
+}, 3000);
+
+console.log(id);
+
+clearInterval(id); // since it is written here this setInterval will not work because this clearInterval is stoping it.
+
+
+// ########################   this in arrow functions wroks differently than normal functions this in arrow functions works on lexical scope that means on parents scope while in normal function this works on the scope of the calling object
+
