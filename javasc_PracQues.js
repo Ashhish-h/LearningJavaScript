@@ -68,3 +68,35 @@ function countVowel(str){
 }
 
 console.log(countVowel("Hello world How are you"));
+
+// Ques-6 write a arrow function that returns square of a number n
+
+let sqr = n => {
+    return n * n;
+};
+
+console.log(sqr(2));
+
+// Ques-7 Write a function that prints "Hello world" 5 time at a interval of 2s.
+let id = setInterval( () => {
+    console.log("Hello World");
+}, 2000);
+
+setTimeout( () => {
+    clearInterval(id);
+    console.log("setInterval has been stopped");
+}, 10000);
+ 
+
+// Ques-8 write a arrow function named arrayAvg() that accepts an array of numbers and give their avrage
+
+let arr = [1, 2, 3, 4, 5];
+let sum = 0;
+let arrAvg = () => {
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum/arr.length;
+}
+
+console.log(arrAvg(arr);
