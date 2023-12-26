@@ -117,3 +117,24 @@ let calci = {
         return a - b;
     }
 };
+
+
+// ###########  THIS KEYWORD in JavaScript
+// this keyword refers to the object that is currently exceuting 
+
+
+// ########  Arrow Functions
+
+// Syntax
+// const func = (a, b) => {
+//     // Method Defination
+// };
+
+let e = 10; 
+let f = 20;
+let func2 = (e, f) => {
+    console.log(e + f);
+};
+
+//if you want to return a single value in arrow functions you don't even need to write the return keyword it will be implicitly added by the complier
+
