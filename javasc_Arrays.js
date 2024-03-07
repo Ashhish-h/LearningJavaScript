@@ -165,3 +165,52 @@ console.log(arr4.push(4)) // used to add values in array , at the end of the arr
 
 console.log(arr4.pop()) // used to delete last element of the array.
 //.pop method returns the deleted element 
+
+
+// ############## forEach() method
+// It takes a callback as parameter (callback :- A function passed as argument into another function)
+
+let marks = [20, 40, 60, 80];
+marks.forEach((el) => {
+  console.log(el);
+})
+
+// ########## Map() Function
+// It is similar to forEaach() method it also perform operation of each element and it return a new array.
+
+let students = [{
+  name: "Ashish",
+  marks: 80
+}, 
+{
+  name: "Deepak",
+  marks: 85
+},
+{
+  name: "Aayush",
+  marks: 90
+}];
+
+let cpi = students.map((res) => {
+  return res.marks / 10;
+});
+console.log(cpi);
+
+// ######## Filter()  
+
+//it also returns new array by filtering elements of the array based on the argument
+
+let numbers = [2, 3, 4, 5, 6, 7, 8];
+let evenNum = numbers.filter( (ele) =>{
+  return ele % 2 == 0;
+});
+
+console.log(evenNum);
+
+// ######### every() method 
+
+//this method returns true or false if every condition return true on every element else return false
+
+let isEvery = [2, 4, 6, 8];
+let bool = isEvery.every((ele) => (ele % 2 == 0) );
+console.log(bool);

@@ -100,3 +100,10 @@ console.log(tempString);
 // Otherwise it returns false.
 
 // The includes() method is case sensitive.
+
+// ################## SPLICE METHOD 
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi"); // fruits is now ["Banana", "Orange", "Lemon", "Kiwi", "Apple", "Mango"]
+
+//here 2 is the index and 0 is the number of elemets to be removed and since nothing is removed and two elements are being added so these two will added to the array from the second index...

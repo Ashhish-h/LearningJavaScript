@@ -99,4 +99,4 @@ let arrAvg = () => {
     return sum/arr.length;
 }
 
-console.log(arrAvg(arr);
+console.log(arrAvg(arr));
