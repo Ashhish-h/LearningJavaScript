@@ -100,3 +100,15 @@ let arrAvg = () => {
 }
 
 console.log(arrAvg(arr));
+
+
+// Ques - 9 Write a program to find the max in arr using reduce method
+let nums = [9, 2, 10, 11, 199, 99999, 3, 35, 86];
+let max = nums.reduce((max, ele) => {
+    if(max < ele){
+        return ele;
+    } else {
+        return max;
+    }
+});
+console.log(max);
