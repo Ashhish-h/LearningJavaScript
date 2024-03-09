@@ -218,6 +218,16 @@ console.log(bool);
 // ########## some 
 //this method is also like the every method it gives boolean value it checks the condition for every element and if conditionis applied on some elements it will return true else it will return false
 
-let some = [1, 3, 4, 6];
+let some = [1, 3, 5, 9];
 let someBool = some.some((ele) => (ele % 2 == 0) );
 console.log(someBool);
+
+// ############ reduce method 
+//it reducees the array to a single value
+//it takes a reducer function with two variable  (accumulator, element)
+//operation done on element will be stored in accumulator
+//final value of the accumulator is returned
+
+let reduceArr = [2, 4, 6, 8, 10];
+let reducedArr = reduceArr.reduce((acc, ele) => (acc * ele));
+console.log(reducedArr);
