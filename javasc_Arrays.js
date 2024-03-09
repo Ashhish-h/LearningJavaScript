@@ -214,3 +214,10 @@ console.log(evenNum);
 let isEvery = [2, 4, 6, 8];
 let bool = isEvery.every((ele) => (ele % 2 == 0) );
 console.log(bool);
+
+// ########## some 
+//this method is also like the every method it gives boolean value it checks the condition for every element and if conditionis applied on some elements it will return true else it will return false
+
+let some = [1, 3, 4, 6];
+let someBool = some.some((ele) => (ele % 2 == 0) );
+console.log(someBool);
