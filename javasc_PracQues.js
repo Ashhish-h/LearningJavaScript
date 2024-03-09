@@ -112,3 +112,9 @@ let max = nums.reduce((max, ele) => {
     }
 });
 console.log(max);
+
+
+// Ques - 10 Check if all numbers in an array is a multiple of 10 or not
+let array = [10, 30, 50, 90, 990, 100, 110, 41];
+let isMultiple = array.every((ele) => (ele % 10 == 0));
+console.log(isMultiple);
