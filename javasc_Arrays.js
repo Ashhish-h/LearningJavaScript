@@ -231,3 +231,25 @@ console.log(someBool);
 let reduceArr = [2, 4, 6, 8, 10];
 let reducedArr = reduceArr.reduce((acc, ele) => (acc * ele));
 console.log(reducedArr);
+
+
+
+// ########### default parameters 
+// default parameters are the default values given to the parameters in the function decleration 
+// ex - 
+// function val(value, sum = 0) // sum = - means if no value of sum is provided at function call it will by dafault be 0;
+
+
+// ####### Spread 
+// it is used on iterables like array and string to unpack them
+let spreadArr = [2, 4, 5, 9];
+console.log(...spreadArr);  // 2 4 5 9
+//We can use this to copy array literals object literals strings to another variable
+
+
+// ######## Rest 
+// It is exact opposite of spread it allows a function to take indefinite arguments and bundle up them in an array 
+function sum(...args){
+  return args.reduce( (sum, ele) => (sum + ele));
+}
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ))
