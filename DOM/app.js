@@ -6,3 +6,11 @@ let header = document.getElementById("header1");
 header.outerText; // it will return 'This is first header' basically content of the header.
 
 //similarly you can select elements by class name and tag name
+
+// ######## querrySelector ###########
+
+document.querySelector('h1'); // it will select only the first h1 tag; 
+// we can select by any method by tag name or by ID name(#ID) or by class name(.className) and we can also use all the selectors of css
+
+document.querySelectorAll("h1");// it will select all h1 tags
+// it returns a NodeList containing all the h1 tags;
