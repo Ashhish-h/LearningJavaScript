@@ -1,5 +1,24 @@
+.container{
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
+}
+
+.color-generator{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .changedColor{
     height: 100px;
-    width: 100px;
+    width: 500px;
     border: 2px solid black;
+    margin-top: 20px;
+    
 }
