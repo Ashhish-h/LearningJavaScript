@@ -41,3 +41,20 @@ async function apiRes(){
 
 
 apiRes();
+
+// ##### Getting data form api using axios
+
+// Why use Axios when we have fetch()?
+// fetch does not retrun data directly it return a readableStream which we have to parse to get data
+// however axios returns data directly
+
+async function getDataUsingAxios(){
+    try{
+        let res = await axios.get(url); // it also returns a promise object which have the data
+        // console.log(data); // it will return the data
+    } catch (e){
+        console.log("error occured: ", e);
+    }
+}
+
+getDataUsingAxios();
