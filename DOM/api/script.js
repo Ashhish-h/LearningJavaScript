@@ -51,7 +51,7 @@ apiRes();
 async function getDataUsingAxios(){
     try{
         let res = await axios.get(url); // it also returns a promise object which have the data
-        // console.log(data); // it will return the data
+        console.log(data); // it will return the data
     } catch (e){
         console.log("error occured: ", e);
     }
