@@ -13,3 +13,31 @@ fetch(url) // it return a promise object so we can use then() and catch() with f
 .catch((err) => {
     console.log(err);
 })
+
+
+
+
+// ### api calls with async and await 
+
+async function getApiRes(){
+    let res = fetch(url);
+    console.log(res);
+}
+
+getApiRes();
+// there is a problem ther we will get undefined instead of api data due to synchronous nature of javaScript,
+// it will simply call the fetch() and excute the next line it won't wait to get response from the api
+
+// To solve this we use  await
+
+async function apiRes(){
+    let res = await fetch(url); // now util we get the response from the api exceution will be paused
+    let data = await res.json();
+    console.log(res);
+    console.log(data.fact); // print actual data we got from the api
+}
+
+// But the problem in using await is that if one fails next lines will not excetue to counter this issue we run the code in try & catch block
+
+
+apiRes();
